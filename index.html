@@ -3,25 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>REVIU · Contenidos que convierten</title>
-  <meta name="description" content="REVIU es una agencia de contenidos para medios y creadores que monetiza con marketing de afiliación: research de productos, guías, comparativas y optimización SEO que convierten en ventas." />
+  <title>REVIU · Datos, SEO y Marketing de Afiliación</title>
+  <meta name="description" content="REVIU: convertimos datos y tendencias en insights y contenidos. Pioneros en marketing de afiliación; periodismo de datos, SEO y performance para resultados medibles." />
   <meta name="theme-color" content="#0b1220" />
-  <meta property="og:title" content="REVIU · Contenidos que convierten" />
-  <meta property="og:description" content="Research, data y SEO para que tus contenidos vendan más." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://dummyimage.com/1200x630/0b1220/ffffff&text=REVIU" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      /* Paleta tech recomendada */
       --bg: #0b1220;            /* Navy profundo */
       --bg-soft: #0f172a;       /* Slate 900 */
       --text: #e5e7eb;          /* Gris claro */
       --muted: #94a3b8;         /* Slate 400 */
       --brand: #3b82f6;         /* Azul eléctrico */
       --brand-2: #06b6d4;       /* Cian/teal */
+      --green: #25d366;         /* WhatsApp */
+      --green-dark: #1ebe57;    /* Hover */
       --card: #111827;          /* Carbón */
       --shadow: 0 10px 30px rgba(0,0,0,.35);
     }
@@ -49,7 +46,7 @@
     .hero p{font-size: clamp(16px, 2.2vw, 20px); color:var(--muted); max-width:780px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
     .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:600;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
-    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff}
     .btn.primary:hover{filter:brightness(1.08)}
     .btn.ghost{background:transparent;color:#fff}
     .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
@@ -96,24 +93,20 @@
     /* FOOTER */
     .footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06);background:var(--bg-soft)}
 
+    /* Redes fijas (siempre visibles) */
+    .socials-fixed{position:fixed;right:18px;bottom:88px;display:flex;flex-direction:column;gap:10px;z-index:1150}
+    .socials-fixed a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:999px;background:rgba(255,255,255,.08);backdrop-filter:saturate(160%) blur(6px);border:1px solid rgba(255,255,255,.12);color:#e5e7eb;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+    .socials-fixed a:hover{background:rgba(255,255,255,.14);color:#fff}
+    @media (max-width:480px){.socials-fixed{right:14px;bottom:86px}.socials-fixed a{width:40px;height:40px}}
+
     /* WhatsApp flotante */
     .whatsapp{position:fixed;right:18px;bottom:18px;z-index:1100}
-    .whatsapp a{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#072b12;padding:12px 14px;border-radius:999px;font-weight:700;box-shadow:0 10px 20px rgba(37,211,102,.35)}
+    .whatsapp a{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:12px 18px;border-radius:12px;font-weight:700;box-shadow:0 10px 20px rgba(37,211,102,.35)}
+    .whatsapp a:hover{background:var(--green-dark)}
 
     /* A11y focus */
     a:focus,button:focus,input:focus,textarea:focus{outline:2px solid var(--brand-2);outline-offset:2px}
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "REVIU",
-    "url": "https://tu-dominio.com",
-    "sameAs": ["https://www.linkedin.com"],
-    "description": "Agencia de contenidos para medios y creadores. Especialistas en marketing de afiliación, research y SEO.",
-    "logo": "https://dummyimage.com/600x600/0b1220/ffffff&text=REVIU"
-  }
-  </script>
 </head>
 <body>
   <!-- NAV -->
@@ -132,11 +125,7 @@
   <header class="hero" id="inicio">
     <div class="container">
       <h1>Contenidos que <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">convierten</span>.</h1>
-      <p>
-        Somos <strong>REVIU</strong>: investigamos datos, analizamos tendencias y producimos
-        <em>reviews</em>, listas y comparativas para que medios y creadores moneticen con
-        <strong>marketing de afiliación</strong>. Periodismo de datos + SEO + performance.
-      </p>
+      <p><strong>Somos REVIU:</strong> convertimos datos y tendencias en contenidos que impulsan el crecimiento de empresas, medios y creadores. Expertos en marketing de afiliación y comercio electrónico, integramos periodismo de datos, SEO y performance para crear contenido que te permita monetizar con impacto, estrategia y resultados medibles.</p>
       <div class="cta-row">
         <a class="btn primary" href="#contacto" aria-label="Escribinos">Escribinos</a>
         <a class="btn ghost" href="#servicios">Ver servicios</a>
@@ -160,12 +149,12 @@
       <div class="cards">
         <article class="card span-6">
           <h3>Research y curaduría de productos</h3>
-          <p>Recolección masiva (crowdsourcing) de opiniones verificadas, fichas técnicas, precios históricos y disponibilidad. Detectamos oportunidades reales de compra.</p>
+          <p>Recolección masiva de opiniones verificadas, fichas técnicas, precios históricos y disponibilidad. Detectamos oportunidades reales de compra.</p>
           <span class="tag">Data + verificación</span>
         </article>
         <article class="card span-6">
           <h3>Producción de contenidos SEO</h3>
-          <p>Reviews, comparativas, guías y listados evergreen listos para posicionar. Arquitectura de enlaces, <em>schema</em>, y on-page impecable.</p>
+          <p>Reviews, comparativas, guías y listados evergreen listos para posicionar. Arquitectura de enlaces, <em>schema</em> y on-page impecable.</p>
           <span class="tag">On-page + Schema</span>
         </article>
         <article class="card span-6">
@@ -208,6 +197,7 @@
       <p class="lead">¿Querés lanzar una sección de afiliados o escalar una existente? Mandanos un mensaje y te respondemos en el día hábil.</p>
 
       <div class="contact">
+        <!-- Reemplazá el action por el endpoint de Formspree asociado a santiago@reviu.com.ar -->
         <form action="https://formspree.io/f/tu-form-id" method="POST" aria-label="Formulario de contacto">
           <div class="grid-2">
             <div class="field">
@@ -226,30 +216,31 @@
           <button class="btn primary" type="submit">Enviar</button>
           <p style="color:var(--muted);font-size:12px;margin-top:10px">Al enviar aceptás nuestra política de privacidad. No hacemos spam, jamás.</p>
         </form>
-        <div>
-          <div class="card">
-            <h3>También por WhatsApp</h3>
-            <p>Si preferís algo directo, escribinos y coordinamos una llamada.</p>
-            <p class="tag">Tiempo de respuesta: el mismo día hábil</p>
-            <p style="margin-top:10px">
-              <a class="btn ghost" href="https://wa.me/541136518474?text=Hola%20REVIU%2C%20quiero%20charlar%20sobre%20contenidos%20con%20afiliados" target="_blank" rel="noopener">Abrir WhatsApp</a>
-            </p>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
       <span>© <span id="y"></span> REVIU. Todos los derechos reservados.</span>
-      <span style="font-size:12px">Hecho con data y café ☕️</span>
+      <!-- Footer limpio, sin redes (están en flotante) -->
     </div>
   </footer>
 
+  <!-- Redes fijas -->
+  <div class="socials-fixed" aria-label="Redes sociales">
+    <a href="https://instagram.com/reviu" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+    </a>
+    <a href="https://linkedin.com/company/reviu" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3.5 8.98H6.5V20.5H3.5V8.98ZM9.5 8.98H12.3V10.4h.05c.39-.74 1.34-1.52 2.76-1.52 2.96 0 3.5 1.95 3.5 4.48V20.5h-3V14.9c0-1.34-.02-3.07-1.87-3.07-1.88 0-2.17 1.47-2.17 2.98V20.5h-3V8.98Z" fill="currentColor"/></svg>
+    </a>
+  </div>
+
   <!-- WhatsApp flotante -->
   <div class="whatsapp" aria-label="Escribinos por WhatsApp">
-    <a href="https://wa.me/541136518474?text=Hola%20REVIU%2C%20quiero%20asesoramiento" target="_blank" rel="noopener" aria-label="WhatsApp REVIU">Escribinos por WhatsApp</a>
+    <a href="https://wa.me/541136518474?text=Hola%20REVIU%2C%20quiero%20asesoramiento" target="_blank" rel="noopener" aria-label="WhatsApp REVIU">Abrir WhatsApp</a>
   </div>
 
   <script>
