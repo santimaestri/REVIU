@@ -112,7 +112,7 @@
                 Diseñamos e implementamos soluciones de automatización a medida para escalar E-commerce, modernizar Medios y potenciar Creadores de Contenido.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contacto" class="bg-brand-accent text-brand-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accentHover transition-all flex items-center justify-center gap-2">
+                <a href="#metodo" class="bg-brand-accent text-brand-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accentHover transition-all flex items-center justify-center gap-2">
                     Conocé nuestro método <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
                 <a href="#servicios" class="px-8 py-4 rounded-full font-semibold text-lg border border-slate-700 hover:border-slate-500 hover:bg-slate-800/50 transition-all text-white">
@@ -237,7 +237,7 @@
                     <h2 class="text-3xl font-bold text-white mb-4">¿Listo para optimizar tu flujo de trabajo?</h2>
                     <p class="text-slate-400">Dejanos un mensaje y evaluamos cómo nuestra tecnología puede impactar en tus métricas de negocio.</p>
                 </div>
-                <form onsubmit="event.preventDefault(); alert('En un entorno real, esto enviaría el correo o conectaría con tu CRM/Webhook.');" class="space-y-6">
+                <form id="contactForm" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Nombre o Empresa</label>
@@ -313,6 +313,24 @@
             } else {
                 nav.classList.remove('shadow-lg');
             }
+        });
+
+        // Formulario de Contacto a Email
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que la página se recargue
+            
+            // Recopilar los datos
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const vertical = document.getElementById('vertical').value;
+            const message = document.getElementById('message').value;
+            
+            // Armar el asunto y el cuerpo del correo
+            const subject = encodeURIComponent(`Nueva consulta REVIU: ${vertical}`);
+            const body = encodeURIComponent(`Nombre/Empresa: ${name}\nEmail de contacto: ${email}\nÁrea de interés: ${vertical}\n\nMensaje:\n${message}`);
+            
+            // Abrir el cliente de correo por defecto dirigido a vos
+            window.location.href = `mailto:santiago@reviu.com.ar?subject=${subject}&body=${body}`;
         });
     </script>
 </body>
