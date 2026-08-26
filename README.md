@@ -1,9 +1,13 @@
-# REVIU
+# Resuelto
 
-Sitio web de **REVIU** — agencia de Inteligencia Artificial y Automatización para
+Sitio web de **Resuelto** — agencia de Inteligencia Artificial y Automatización para
 E-commerce, Medios y Creadores de Contenido.
 
 🌐 **En vivo:** [reviu.com.ar](https://reviu.com.ar)
+
+> **Nota sobre el nombre:** la empresa se llama **Resuelto**, pero el sitio se
+> sigue accediendo por el dominio `reviu.com.ar` (el nombre anterior). El dominio
+> y el correo de contacto no cambian: solo cambió la marca que se muestra.
 
 ## Qué hay en este repo
 
