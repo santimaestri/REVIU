@@ -236,27 +236,32 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
                 <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
-                    <p class="mono text-xs uppercase tracking-widest text-slate-500 mb-4">Autos &middot; Publicado</p>
-                    <h3 class="text-xl font-bold text-white mb-4 leading-snug">El primer auto argentino tiene quince años</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Un mayor de 60 tiene cinco veces más chances de llevarse un 0 km que un menor de 30. Pero el motivo no es generacional: el crédito prendario topea la antigüedad entre 8 y 10 años, y el auto con el que un joven entra al mercado tiene quince. <strong class="text-white font-semibold">El crédito no llega hasta donde está ese auto.</strong>
-                    </p>
-                    <p class="text-slate-500 text-xs leading-relaxed">
-                        Base: las 181.521 operaciones de julio a nombre de personas, cruzadas con los precios activos de Mercado Libre. La brecha se sostiene en las 19 provincias medidas, sin una sola excepción.
-                    </p>
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 text-brand-accent">
+                        <i data-lucide="rss" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Fuentes automatizadas</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">El flujo de información de una sección, ordenado y corriendo solo. La redacción deja de perder horas en juntar material y las usa en escribir.</p>
                 </div>
+
                 <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
-                    <p class="mono text-xs uppercase tracking-widest text-slate-500 mb-4">Propiedades &middot; Publicado</p>
-                    <h3 class="text-xl font-bold text-white mb-4 leading-snug">El crédito hipotecario llega al usado y no al pozo</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Una propiedad a estrenar tiene cinco veces menos chances de calificar para un crédito que una usada: 6,4 % contra 33,8 %. <strong class="text-white font-semibold">Se repite en los 48 barrios de la Ciudad, uno por uno.</strong>
-                    </p>
-                    <p class="text-slate-500 text-xs leading-relaxed">
-                        Base: 80.990 avisos relevados por la API oficial. Medido sobre el total de avisos el ranking daba al revés — el control metodológico es lo que separa una nota sólida de un error publicado.
-                    </p>
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 text-brand-accent">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Relevamientos a medida</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Cuando el dato que necesita la nota no existe publicado, lo construimos. Barrio por barrio, modelo por modelo, con la base declarada y no con el total, que es donde se cuelan los errores.</p>
                 </div>
+
+                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center mb-5 text-brand-accent">
+                        <i data-lucide="file-check-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">La nota, lista para editar</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">No entregamos una planilla para que alguien la interprete. Entregamos el texto armado, con la tabla y el mapa hechos, en el formato de la redacción.</p>
+                </div>
+
             </div>
 
             <p class="text-center text-slate-500 text-sm mt-10 max-w-3xl mx-auto">
@@ -264,6 +269,45 @@
             </p>
         </div>
     </section>
+
+    <!-- ==========================================================================
+         TRABAJOS PUBLICADOS - SECCION LISTA PARA ACTIVAR
+
+         Hoy esta desactivada a proposito: todavia no hay notas publicadas.
+         Cuando salga la primera:
+
+           1. Borra la linea de abajo marcada  INICIO DESACTIVADO  y la marcada
+              FIN DESACTIVADO. Son las dos que envuelven la seccion en un
+              comentario. Al sacarlas, la seccion se enciende.
+           2. Duplica un bloque de nota (la etiqueta article) por cada una y
+              completa los cuatro campos: medio, fecha, titulo y el enlace.
+
+         Cada nota que pongas aca tiene que estar publicada de verdad y el
+         enlace tiene que abrir: es lo primero que un editor va a chequear.
+    =========================================================================== -->
+
+    <!--INICIO DESACTIVADO
+    <section id="trabajos" class="py-24 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <p class="mono text-xs uppercase tracking-widest text-brand-accent mb-4">Trabajos</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Publicado</h2>
+                <p class="max-w-2xl mx-auto text-slate-400">Notas nuestras que salieron, con el enlace para leerlas completas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+                <article class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
+                    <p class="mono text-xs uppercase tracking-widest text-slate-500 mb-4">MEDIO / FECHA</p>
+                    <h3 class="text-xl font-bold text-white mb-4 leading-snug">TITULO DE LA NOTA</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5">El hallazgo en dos o tres lineas: que mostro el relevamiento y por que importa.</p>
+                    <a href="URL-DE-LA-NOTA" target="_blank" rel="noopener noreferrer" class="text-brand-accent text-sm font-semibold inline-flex items-center gap-1">Leer la nota <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    FIN DESACTIVADO-->
 
     <!-- Ingresos -->
     <section id="ingresos" class="py-24 bg-slate-900/80 border-y border-slate-800">
@@ -444,8 +488,8 @@
                     <p class="text-sm text-slate-400 leading-snug">cuentas de Mercado Libre operadas de punta a punta</p>
                 </div>
                 <div class="bg-brand-card p-6 md:p-8">
-                    <div class="text-4xl font-extrabold text-white tracking-tight mb-2">20</div>
-                    <p class="text-sm text-slate-400 leading-snug">notas de datos preparadas para Clarín</p>
+                    <div class="text-4xl font-extrabold text-white tracking-tight mb-2">48</div>
+                    <p class="text-sm text-slate-400 leading-snug">barrios porteños relevados uno por uno</p>
                 </div>
                 <div class="bg-brand-card p-6 md:p-8">
                     <div class="text-4xl font-extrabold text-white tracking-tight mb-2">262K</div>
